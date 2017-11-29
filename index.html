@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+	<title>Halaman Login</title>
+	<style type="text/css">
+		<!--  -->
+	header{
+		height:100px;
+		font-size:30px;
+		color:black;
+	}
+	body{
+		background-image:url(c.jpg);
+		height:100%;
+		background-position:150px 1px;
+	}
+	<!--  -->
+	.signIn{
+		background-color:#44619D;
+		font-family:sans-serif;
+		font-size:20px;
+		height:50px;
+		margin-top:0px;
+		border:1px solid #44619D;
+		height:10x;
+		color:white;
+		padding-left:10px;
+	}
+	<!--  -->
+	.masuk{
+		margin-top:70px;
+		background-color:white;
+		border:1px solid black;
+		width:500px;
+		height:350px;
+	}
+	.inputDaftar{
+		width:350px;
+		height:35px;
+		font-family:sans-serif;
+		font-size:20px;
+		border:2px solid #aaa;
+		border-radius:4px;
+		margin-left:15px;
+		margin-top:15px;
+		padding:7px;
+		transition:0.3s;
+	}
+	.inputDaftar:focus{
+		border-color:dodgerBlue;
+		box-shadow:0 0 8px 0 dodgerBlue;
+	}
+	<!--  -->
+	.daftar{ 
+		background-color:white;
+		border:1px solid black;
+		width:650px;
+		height:540px;
+		margin-right:60px;
+		margin-top:70px;
+	}
+	<!--  -->
+	.button{  
+		background-color:#B70000;
+		width:450px;
+		height:50px;
+		color:white;
+		font-family:sans-serif;
+		font-size:25px;
+		border:2px solid;
+		border-radius:5px;
+	}
+	.button:hover{
+		background:#C0C0C0;
+		color:white;
+		transitoin:0.40s;
+	}
+	<!--  -->
+	.inputMasuk{ 
+		background-color:#;
+		width:450px;
+		height:35px;
+		font-family:sans-serif;
+		border:2px solid #aaa;
+		border-radius:4px;
+		padding:10px;
+		font-size:20px;
+		position:relative;
+	}
+	.inputMasuk:focus{
+		border-color:dodgerBlue;
+		box-shadow:0 0 8px 0 dodgerBlue;
+	} 
+	<!--  -->
+	aside{
+		float:right;
+	}
+	.unggahFotoprofil{
+		width:200px;
+		font-size:20px;
+	}
+	.posisiFoto{
+		margin-right:40px;
+		margin-top:20px;
+	}
+	#UploadFile{
+		display:none;
+	}
+	.UploadFile{
+		height:20px;
+		text-align:center;
+		background-color:green;
+		color:#fff;
+		padding:10px;
+		font-family:sans-serif;
+		cursor:pointer;
+		transitoin:0.40s;
+	}
+	.UploadFile:hover{
+		background:#C0C0C0;
+		color:white;
+		transitoin:0.40s;
+	</style>
+</head>
+<header>
+</header>
+<body>
+	<aside>
+		<div class="daftar">
+			<div class="signIn">
+				<p>Sign up</p>
+			</div>
+			<aside class="posisiFoto">
+				<img src="pf.gif"></br>
+				<div class="UploadFile">
+				<label for="UploadFile">Unggah foto profil</label>
+				<input type="file" name="Unggah foto profil" class="unggahFotoprofil" id="UploadFile">
+				</div>
+			</aside>
+			<input type="text" placeholder="Nama Lengkap" class="inputDaftar"></br>
+			<input type="text" placeholder="Alamat Email" class="inputDaftar"></br>
+			<input type="password" placeholder="Password" class="inputDaftar"></br>
+			<input type="password" placeholder="Masukan Ulang Password" class="inputDaftar"> </br>
+			<p style="font-size:25px;padding-left:10px">Jenis Kelamin : <p>
+			<input type="radio" name="jenis kelamin" style="margin-left:15px"><a style="font-size:25px;padding-right:20px"> Perempuan</a>
+			<input type="radio" name="jenis kelamin"><a style="font-size:25px"> Laki-Laki</a></br></br>
+			<center>
+			<input type="button" value="Buat Akun " class="button" onclick="window.location='halaman verifikasi.html'">
+			</center>
+		</div>
+	</aside>
+	<div class="masuk">
+		<div class="signIn" >
+		<p> Please Sign In</p>
+		</div>
+		</br>
+		<center>
+		<input type=email placeholder="User Name" class="inputMasuk"></br></br>
+		<input type=password placeholder="Password" class="inputMasuk"></br></br></br>
+		<a style="font-size:20px"><input type="checkbox">Tetap Masuk</a><a style="font-size:20px"> | </a><a href="halaman lupa kata sandi.html" style="font-size:20px;color:green">Lupa Kata Sandi ?</a></br></br>
+		<input type="submit" value=" Masuk "class="button" onclick="window.location='halaman profil tentang.html'">
+		</center>
+	</div>
+</body>
+</html>
